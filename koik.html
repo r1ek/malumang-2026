@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="et"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex,nofollow"><title>Kõik materjalid ühel lehel — spordimälumäng 21.11.2026</title>
+<meta name="robots" content="noindex,nofollow"><link rel="icon" href="data:,"><title>Kõik materjalid ühel lehel — spordimälumäng 21.11.2026</title>
 <style>body{margin:0;font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#fafaf7;color:#1d1d1b}
-.top{position:sticky;top:0;z-index:10;background:#13293d;color:#fff;padding:8px 12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.top{position:sticky;top:0;z-index:10;background:#13293d;color:#fff;padding:8px 12px;display:flex;gap:10px;align-items:center;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap}
+.top a{flex:none} h2.sec{scroll-margin-top:56px}
 .top a{color:#fff;font-weight:600;text-decoration:none;padding:4px 8px;border-radius:999px;font-size:.85rem}
 .top a.p{background:#e8a33d;color:#13293d;margin-left:auto}
 h2.sec{max-width:1100px;margin:28px auto 6px;padding:0 12px;font-size:1.3rem;border-bottom:3px solid #0b5cad}
@@ -15,7 +16,9 @@ iframe{display:block;width:100%;max-width:1100px;margin:0 auto;border:0;min-heig
 <h2 class="sec" id="s-teemad">Küsimused teemade kaupa</h2><iframe src="_print/teemad.html" title="Küsimused teemade kaupa" loading="lazy"></iframe>
 <h2 class="sec" id="s-oppematerjal">Õppematerjal</h2><iframe src="_print/oppematerjal.html" title="Õppematerjal" loading="lazy"></iframe>
 <h2 class="sec" id="s-kusimuste-pank">Küsimuste pank</h2><iframe src="_print/kusimuste-pank.html" title="Küsimuste pank" loading="lazy"></iframe>
-<script>function fit(f){try{var d=f.contentDocument;f.style.height=Math.max(d.documentElement.scrollHeight,d.body.scrollHeight)+'px';}catch(e){}}
+<h2 class="sec" id="s-lisa-nadal-1">Lisa: Nädal 1 · 1.–8.11 — kõik uudised</h2><iframe src="_print/lisa-nadal-1.html" title="Lisa: Nädal 1 · 1.–8.11 — kõik uudised" loading="lazy"></iframe>
+<h2 class="sec" id="s-lisa-nadal-2">Lisa: Nädal 2 · 9.–15.11 — kõik uudised</h2><iframe src="_print/lisa-nadal-2.html" title="Lisa: Nädal 2 · 9.–15.11 — kõik uudised" loading="lazy"></iframe>
+<script>function fit(f){try{var d=f.contentDocument;f.style.height='50px';f.style.height=Math.max(d.documentElement.scrollHeight,d.body.scrollHeight)+'px';}catch(e){}}
 document.querySelectorAll('iframe').forEach(function(f){f.addEventListener('load',function(){fit(f);setTimeout(function(){fit(f)},700);setTimeout(function(){fit(f)},2000);});});
 window.addEventListener('resize',function(){document.querySelectorAll('iframe').forEach(fit);});</script>
 </body></html>
