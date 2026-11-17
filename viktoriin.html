@@ -120,6 +120,7 @@ const NUMF = Object.fromEntries(Object.entries(NUMW).map(([k, v]) => [fold(k), v
 function norm(s){
   s = fold(s).replace(/ß/g, 'ss').replace(/(\d)[.,](\d)/g, '$1p$2');   // keep decimals: 6,31 = 6.31 ≠ 631
   s = s.replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
+  while (/(\d) (\d{3})(?!\d)/.test(s)) s = s.replace(/(\d) (\d{3})(?!\d)/g, '$1$2');   // 43 440 = 43440
   return s.split(' ').map(w => (w in NUMF ? String(NUMF[w]) : w)).join(' ');
 }
 function lev(a, b){
@@ -138,6 +139,8 @@ function lev(a, b){
 }
 const allow = len => len <= 3 ? 0 : len <= 6 ? 1 : len <= 12 ? 2 : 3;
 function close(a, b){
+  const nums = x => (x.match(/\d+(p\d+)?/g) || []).join(',');
+  if (nums(a) !== nums(b)) return false;                      // separate numbers must stay separate and equal
   if (a.replace(/ /g, '') === b.replace(/ /g, '')) return true;
   if (/\d/.test(a) || /\d/.test(b)) return a === b;          // numbers/years must be exact
   return lev(a, b) <= allow(Math.max(a.length, b.length));
@@ -149,6 +152,16 @@ function contains(inp, key){
     if (kw.every((w, k) => close(iw[s + k], w))) return true;
   }
   return false;
+}
+// same words in any order ("kollane, sinine, …" = "sinine, kollane, …"); fillers like "ja" ignored
+const FILL = new Set(['ja', 'ning', 'ka', 'on', 'and']);
+const dropFill = x => x.split(' ').filter(w => !FILL.has(w)).join(' ');
+function sameWords(inp, key){
+  const iw = inp.split(' ').filter(w => !FILL.has(w)), kw = key.split(' ').filter(w => !FILL.has(w));
+  if (kw.length < 2 || iw.length !== kw.length || /\d/.test(key)) return false;   // scores/dates keep their order
+  const used = new Array(kw.length).fill(false);
+  const fit = i => i === iw.length || kw.some((k, j) => !used[j] && close(iw[i], k) && (used[j] = true, fit(i + 1) || (used[j] = false)));
+  return fit(0);
 }
 function keysOf(item){
   let ks = (item.k && item.k.length) ? item.k.slice() : [];
@@ -162,6 +175,8 @@ function judge(input, item){
   const who = /(^|\s)(kes|kelle\S*|keda)\s/i.test(item.q);
   for (const k of keysOf(item)) {
     if (close(inp, k)) return true;
+    if (sameWords(inp, k)) return true;
+    if (close(dropFill(inp), dropFill(k))) return true;
     if (/^\d+(p\d+)?$/.test(k) && inp.split(' ')[0] === k) return true;   // "11 punkti", "12. tiitel"
     if (k.split(' ').length > 1 || k.length >= 4) { if (contains(inp, k)) return true; }
     // typed a single word that is one significant word of a multi-word key (e.g. surname)
