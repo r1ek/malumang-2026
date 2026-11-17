@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spordiuudised 20.–31.10.2026 — mälumängu õppematerjal</title>
+<style>
+:root{--bg:#fafaf7;--fg:#1d1d1b;--mut:#5f5f5a;--acc:#0b5cad;--star:#b25e00;--card:#fff;--line:#e3e2dc;--abg:#eef4fb}
+
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--fg)}
+header{padding:20px 16px 8px;max-width:900px;margin:auto}
+h1{font-size:1.5rem;margin:0 0 4px}
+.sub{color:var(--mut);font-size:.92rem}
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav div{max-width:900px;margin:auto;padding:8px 16px;display:flex;gap:6px;overflow-x:auto;white-space:nowrap}
+nav a{font-size:.85rem;padding:4px 10px;border:1px solid var(--line);border-radius:999px;color:var(--fg);text-decoration:none}
+main{max-width:900px;margin:auto;padding:8px 16px 60px}
+section{margin-top:26px}
+h2{font-size:1.15rem;border-bottom:2px solid var(--acc);padding-bottom:4px}
+ul.f{list-style:none;padding:0;margin:0}
+ul.f li{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:9px 12px;margin:7px 0}
+ul.f li.s{border-left:4px solid var(--star)}
+.d{color:var(--mut);font-size:.8rem;margin-right:6px;font-variant-numeric:tabular-nums}
+.src{font-size:.8rem;white-space:nowrap}
+a{color:var(--acc)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.q li{margin:4px 0}
+details summary{cursor:pointer;color:var(--acc)}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+td,th{border:1px solid var(--line);padding:4px 7px;text-align:left}
+.legend{font-size:.85rem;color:var(--mut)}
+.star{color:var(--star)}
+ol.cards{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ol.cards li{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--star);border-radius:10px;padding:12px 14px;margin:0}
+.qrow{display:flex;gap:10px;align-items:flex-start}
+.num{flex:none;width:26px;height:26px;border-radius:50%;background:var(--star);color:#fff;font-weight:700;font-size:.85rem;display:flex;align-items:center;justify-content:center}
+.q{font-weight:600;line-height:1.35}
+.a{margin:10px 0 0 36px;padding:8px 10px;background:var(--abg);border-radius:6px;font-size:1.02rem}
+.fu{margin:6px 0 0 36px;font-size:.9rem;color:var(--mut)}
+.fu b{color:var(--fg)}
+.lbl{display:inline-block;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;font-weight:700;color:var(--mut);margin-right:6px}
+.a .lbl{color:var(--acc)}
+.meta{margin:6px 0 0 36px;font-size:.78rem;color:var(--mut)}
+
+ol.cards .hd{display:flex;gap:10px;align-items:flex-start}
+ol.cards .h{font-weight:700;font-size:1.05rem;line-height:1.35}
+ol.cards .grid{display:grid;grid-template-columns:minmax(110px,170px) 1fr;margin:10px 0 0 36px;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+ol.cards .k,ol.cards .v{padding:6px 10px;border-top:1px solid var(--line);font-size:.93rem}
+ol.cards .k{color:var(--mut);background:var(--abg)}
+ol.cards .grid>div:nth-child(-n+2){border-top:none}
+ol.cards .lq{margin:8px 0 0 36px;font-size:.88rem;color:var(--mut)}
+@media (max-width:560px){ol.cards .grid{grid-template-columns:1fr;margin-left:0}ol.cards .k{border-top:1px solid var(--line);padding-bottom:2px;font-size:.78rem}ol.cards .v{border-top:none;padding-top:2px}ol.cards .lq,ol.cards .meta{margin-left:0}}
+.test{margin-top:14px;background:var(--card);border:1px dashed var(--acc);border-radius:10px;padding:12px 14px}
+.test ol{margin:8px 0;padding-left:22px}
+.ansl{font-size:.85rem;color:var(--mut);border-top:1px dashed var(--line);padding-top:6px}
+ul.t2{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+ul.t2 li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+ul.t2 .clue{font-size:.88rem;color:var(--mut)}
+ul.t2 .a2{font-weight:700;margin-top:4px;padding-top:4px;border-top:1px dashed var(--line)}
+ul.t2 .meta{margin:6px 0 0}
+details.big{margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:0}
+details.big>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px;font-weight:600;font-size:1.02rem;border-radius:10px}
+details.big>summary::-webkit-details-marker{display:none}
+details.big>summary:hover{background:var(--abg)}
+details.big .sh{flex:none;font-size:.8rem;font-weight:700;color:var(--bg);background:var(--acc);padding:5px 12px;border-radius:999px}
+details.big .sh::before{content:"▸ "}
+details.big[open] .sh::before{content:"▾ "}
+details.big .sh::after{content:" · ava"}
+details.big[open] .sh::after{content:" · sulge"}
+details.big[open]>summary{border-bottom:1px solid var(--line);border-radius:10px 10px 0 0}
+details.big>section,details.big>section+section{padding:0 16px 8px}
+
+</style>
+<meta name="robots" content="noindex,nofollow"><link rel="icon" href="data:,"><style id="mmprint-css">
+@page{size:A4;margin:10mm 11mm}
+.mm-screen,.hero .board,.hero .eyebrow,.hero .lead{display:none!important}
+@media screen and (max-width:600px){.qlist,.round{column-count:1!important}}
+html{font-size:10pt!important}
+body{font:10pt/1.32 Georgia,"Times New Roman",serif!important;background:#fff!important;color:#000!important;margin:0!important}
+*,*::before,*::after{background:transparent!important;color:#000!important;box-shadow:none!important;text-shadow:none!important;border-radius:0!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body *{border-color:#bbb!important;max-width:none!important}
+nav,.search,.up,.chips,#treset,#tcheck,.dock,#scorebox,input,button,.verdict,.ovr,.tools,.mmnav-bar,.hero .cells,.chev,.dots,.legend,.sh,img,svg,picture{display:none!important}
+header,.hero,main,section,.wrap,.card,.box,article,details,.body{margin:0!important;padding:0!important;border:0!important;min-height:0!important;height:auto!important;position:static!important}
+h1{font:700 15pt/1.2 Georgia,serif!important;margin:0 0 4pt!important}
+h2{font:700 12.5pt/1.2 Georgia,serif!important;margin:10pt 0 3pt!important;border-bottom:1px solid #000!important;padding-bottom:1pt!important}
+h3{font:700 10.5pt/1.25 Georgia,serif!important;margin:7pt 0 2pt!important}
+summary{display:block!important;padding:0!important;margin:6pt 0 2pt!important;cursor:auto}
+summary::-webkit-details-marker,summary::marker{display:none!important;content:""!important}
+p,li,div,td,th{font-size:10pt!important;line-height:1.32!important}
+p{margin:0 0 3pt!important}
+ul,ol{margin:0 0 4pt!important;padding-left:16pt!important}
+li{margin:0 0 2.5pt!important;padding:0!important;border:0!important;min-height:0!important}
+ol.cards>li,ul.t2>li,.qa,.tq{margin:0 0 4pt!important;padding:0 0 3pt!important;border:0!important;border-bottom:1px dotted #999!important}
+ul.t2,ol.cards,.grid,.cells{display:block!important;columns:auto!important}
+table{border-collapse:collapse!important;width:100%!important;font-size:9pt!important}
+td,th{border:1px solid #999!important;padding:1.5pt 3pt!important;font-size:9pt!important}
+a{text-decoration:none!important}
+b,strong,.lbl,.num,.q{font-weight:700!important}
+.lbl{font-size:8.5pt!important;text-transform:uppercase}
+.meta,.note,.sub,small,.d{font-size:8.5pt!important;color:#333!important}
+*{font-family:Georgia,"Times New Roman",serif!important}
+body div{padding:0!important;margin-top:0!important;margin-bottom:0!important;border-top:0!important;border-left:0!important;border-right:0!important;min-height:0!important}
+body div:not(.qi):not(.tq):not(.card){border-bottom:0!important}
+.qi,.qa,.tq,.card,ol.cards>li,ul.t2>li{margin:0 0 3pt!important;padding:0 0 2.5pt!important;border:0!important;border-bottom:1px dotted #999!important;display:block!important}
+.a,.a2,.fu,.ans,.answer,.res{margin:1pt 0 0!important;padding:0!important;border:0!important;display:block!important}
+.qrow{display:flex!important;gap:5pt}
+.num,.qn{flex:none}
+.qlist,.round{display:block!important;column-count:2!important;column-gap:16pt!important;column-rule:1px solid #ddd}
+.qlist>li,.qlist>.qi{break-inside:avoid}
+.round>h2,.round>h3,.round>summary,.round>.lvl,.round>p{column-span:all}
+.tq .res{display:block!important}
+li,.tq,.qa,.qi,.card{break-inside:avoid}
+h2,h3,summary{break-after:avoid}
+</style><script id="mmprint-js">(function(){function prep(){
+document.querySelectorAll('details').forEach(function(d){d.open=true;});
+document.querySelectorAll('.ans[hidden],.a[hidden]').forEach(function(e){e.hidden=false;});
+var t=document.getElementById('test');if(t)t.classList.add('checked');}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',prep);else prep();window.addEventListener('load',prep);setTimeout(prep,800);})();</script></head>
+<body>
+<header>
+<h1>Spordiuudised 20.–31.10.2026</h1>
+<div class="sub">Spordimälumäng 21.11.2026 · oktoobri lõpu kokkuvõte<br>
+Peamine allikas: <b>ERR Sport</b> (kõik ERR-i sporditeemad 20.–31.10 läbi vaadatud). Lõpus on Postimehe ja Delfi pealkirjad, mida ERR-is ei olnud. Koostatud 17.11.2026.</div>
+</header>
+<nav><div><a href="#top">⭐ Tase 1</a><a href="#t2">Tase 2</a><a href="#koik">Kõik uudised</a><a href="#lisa">Postimees/Delfi</a></div></nav>
+<main>
+
+<section>
+<div class="box"><span class="legend"><span class="star">▌</span> oranž äär = tõenäoline küsimus · kuupäev = sündmuse või uudise kuupäev</span></div>
+</section>
+
+<section id="top">
+<h2>⭐ Tase 1: 12 kõige tõenäolisemat küsimust</h2>
+<p class="legend">Järjestatud tõenäosuse järgi.</p>
+<ol class="cards">
+<li><div class="qrow"><span class="num">1</span><div class="q">Kes võitis 26.10 Londonis jalgpalli Ballon d'Ori ehk maailma parima meesjalgpalluri auhinna?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Harry Kane</b> (Inglismaa, Müncheni Bayern)</div><div class="fu"><span class="lbl">Lisaküsimus</span> kes oli enne teda viimane inglasest Ballon d'Ori võitja? <b>Michael Owen (2001)</b></div><div class="fu"><span class="lbl">Täpsustus</span> Teine oli Kylian Mbappé ja kolmas Lamine Yamal. Naiste auhinna võitis kolmandat korda Alexia Putellas (sama palju on Aitana Bonmatíl). Parima noormängija Kopa trofee sai kolmandat aastat järjest Yamal. Kane viis Inglismaa kaptenina suvisel MM-il pronksile ja lõi hooajal 2025/26 kokku 73 väravat.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610177536/maailma-parimaks-jalgpalluriks-valiti-harry-kane">ERR</a> · <a class="src" href="https://sport.postimees.ee/8571934">Postimees</a></div></li>
+<li><div class="qrow"><span class="num">2</span><div class="q">Kes nimetati 23.10 Eesti meeste võrkpallikoondise peatreeneriks Alar Rikbergi asemele?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Rainer Vassiljev</b></div><div class="fu"><span class="lbl">Lisaküsimus</span> millise riigi meeste võrkpallikoondist juhendas Vassiljev aastatel 2024–2026? <b>Läti</b></div><div class="fu"><span class="lbl">Täpsustus</span> Vassiljev on ühtlasi Pärnu Võrkpalliklubi peatreener, leping alaliiduga on kaheaastane. Rikberg juhendas koondist alates 2023. aastast ja viis selle edetabelikoha alusel MM-finaalturniirile: esimese Eesti võistkonnana olümpiakavas oleval pallimängualal.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610174584/eesti-vorkpallikoondise-uueks-peatreeneriks-saab-rainer-vassiljev">ERR</a> · <a class="src" href="https://sport.postimees.ee/8570129">Postimees</a></div></li>
+<li><div class="qrow"><span class="num">3</span><div class="q">Kes võitis 25.10 Austinis vormel 1 MM-sarja USA Grand Prix' etapi?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Kimi Antonelli</b> (Itaalia, Mercedes)</div><div class="fu"><span class="lbl">Lisaküsimus</span> millise vanuserekordi püstitaks 20-aastane Antonelli F1 maailmameistriks tulles? <b>kõigi aegade noorimaks F1 maailmameistriks</b></div><div class="fu"><span class="lbl">Täpsustus</span> Teine oli Charles Leclerc (Ferrari) ja kolmas Max Verstappen (Red Bull). See oli Antonelli hooaja 9. etapivõit. Austinis ta tiitlit veel ei kindlustanud: järgmine etapp oli Mehhikos 1.11.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610176723/antonelli-voitis-texases-aga-tiitlit-veel-ei-kindlustanud">ERR</a> · <a class="src" href="https://sport.postimees.ee/8571223">Postimees</a></div></li>
+<li><div class="qrow"><span class="num">4</span><div class="q">Kes võitis 31.10 Tallinnas esimese eestlasena profipoksi organisatsiooni WBA Balti meistrivöö?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Stiven Aas</b> (raskekeskkaal, kuni 90,7 kg)</div><div class="fu"><span class="lbl">Lisaküsimus</span> keda ta kümneraundilises tiitlimatšis võitis? <b>slovakk Lukaš Labaško</b></div><div class="fu"><span class="lbl">Täpsustus</span> See oli Warrior Fight 9 võitlusõhtu peamatš. 26-aastane Aas on alates 2023. aasta märtsist võitnud kõik 11 profimatši, neist viis nokaudiga.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610182507/stiven-aas-voitis-esimese-eestlasena-wba-balti-profipoksi-meistrivoo">ERR</a></div></li>
+<li><div class="qrow"><span class="num">5</span><div class="q">Heiki Nabi jäi oktoobri lõpus Astanas maadluse MM-il kreeka-rooma maadluse raskekaalus pronksimatšist välja. Mis aastatel on Nabi tulnud maailmameistriks?</div></div><div class="a"><span class="lbl">Vastus</span> <b>2006 (kuni 96 kg) ja 2013 (raskekaal)</b></div><div class="fu"><span class="lbl">Lisaküsimus</span> kellele kaotas 41-aastane Nabi 26.10 lohutusringis? <b>usbekk Rafael Tsitsuašvili (1:1, usbekk sai punkti esimesena)</b></div><div class="fu"><span class="lbl">Täpsustus</span> Kaheksandikfinaalis kaotas Nabi maailma edetabeli liidrile, ungarlasele Darius Vitekile. MM-medaleid on Nabil kokku viis. Pärast võistlust jättis ta karjääri jätkamise lahtiseks. Richard Karelson (kuni 97 kg) langes välja avaringis.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610176867/heiki-nabi-kaotas-mm-il-lohutusringis">ERR</a> · <a class="src" href="https://sport.err.ee/1610177071/nabi-pean-vaatama-kas-olen-veel-valmis-tippspordi-kannatust-labi-elama">ERR</a></div></li>
+<li><div class="qrow"><span class="num">6</span><div class="q">Kes kindlustas 29.10 Viini ATP 500 tenniseturniiril veerandfinaali jõudes tõusu meeste tennise maailma esireketiks alates 2.11?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Alexander Zverev</b> (Saksamaa)</div><div class="fu"><span class="lbl">Lisaküsimus</span> kes oli enne teda ainus sakslasest meeste maailma esireket? <b>Boris Becker</b></div><div class="fu"><span class="lbl">Täpsustus</span> 29-aastane Zverev on ajaloos 30. meeste esireket. Senine esinumber Jannik Sinner langes teiseks.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610180965/zverevist-saab-maailma-esireket-jargmisel-esmaspaeval">ERR</a> · <a class="src" href="https://sport.postimees.ee/8574059">Postimees</a></div></li>
+<li><div class="qrow"><span class="num">7</span><div class="q">Milline kolmekordne tennise suure slämmi turniiri võitja lõpetas 41-aastasena karjääri kodusel Baseli ATP 500 turniiril?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Stan Wawrinka</b> (Šveits)</div><div class="fu"><span class="lbl">Lisaküsimus</span> millised slämmiturniirid ta võitis? <b>Austraalia lahtised 2014, Prantsusmaa lahtised 2015, USA lahtised 2016</b></div><div class="fu"><span class="lbl">Täpsustus</span> Viimases matšis kaotas ta tšehhile Jiri Leheckale 5:7, 6:7. Wawrinka on ainus mängija, kes on ühel slämmil alistanud nii Novak Djokovici kui ka Rafael Nadali (2014. aasta Austraalia lahtised).</div><div class="meta"><a class="src" href="https://sport.err.ee/1610179129/41-aastane-wawrinka-tombas-kodupubliku-ees-karjaarile-joone-alla">ERR</a></div></li>
+<li><div class="qrow"><span class="num">8</span><div class="q">Milline meeskond võitis oktoobri lõpus esimest korda ajaloos Põhja-Ameerika pesapalliliiga MLB finaalseeria (World Series)?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Milwaukee Brewers</b> (finaalseeria Tampa Bay Raysi vastu 4:1)</div><div class="fu"><span class="lbl">Lisaküsimus</span> mis aastal jõudis Brewers varem finaalseeriasse? <b>1982 (kaotas St. Louis Cardinalsile)</b></div><div class="fu"><span class="lbl">Täpsustus</span> Klubi asutati 1969. aastal. Põhihooajal oli Brewers liiga parim meeskond: 162 mängust 103 võitu.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610180101/milwaukee-pani-suureparasele-hooajale-punkti-esimese-mlb-tiitliga">ERR</a></div></li>
+<li><div class="qrow"><span class="num">9</span><div class="q">Kes lõi Hispaania jalgpalli kõrgliiga hooaja esimeses El Clásicos Madridi Reali mõlemad väravad, kui Real võitis võõrsil Barcelonat 2:1?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Kylian Mbappé</b> (41. ja 87. minut)</div><div class="fu"><span class="lbl">Lisaküsimus</span> kes on Madridi Reali peatreener? <b>José Mourinho</b></div><div class="fu"><span class="lbl">Täpsustus</span> Barcelona värava lõi Raphinha. See oli Barcelonale hooaja esimene kaotus (10. voor, ERR-i uudis 26.10).</div><div class="meta"><a class="src" href="https://sport.err.ee/1610176861/mbappe-varavad-andsid-barcelonale-esimese-kaotuse">ERR</a></div></li>
+<li><div class="qrow"><span class="num">10</span><div class="q">Milline rahvusvaheline kohus rahuldas 30.10 Venemaa jäähokikoondiste kaebuse võistluskeelu pikendamise vastu (ehk avas neile tee tagasi jäähoki MM-ile)?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Rahvusvaheline spordiarbitraaž (CAS)</b></div><div class="fu"><span class="lbl">Lisaküsimus</span> millisele linnale andis rahvusvaheline tõstespordiliit IWF 25.10 2030. aasta tõstmise MM-i korraldusõiguse? <b>Moskva</b></div><div class="fu"><span class="lbl">Täpsustus</span> CAS-i hinnangul ei esitanud rahvusvaheline jäähokiliit IIHF piisavaid tõendeid Venemaa võistluskeelu pikendamiseks. Eesti jäähokiliidu president Rauno Parras ei pea Venemaa naasmist järgmisel aastal tõenäoliseks. Läti teatas, et nende koondised Venemaa ja Valgevenega ei mängi.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610182294/lati-hokiliit-valistas-agressorriikidega-jaa-jagamist">ERR (Läti)</a> · <a class="src" href="https://sport.err.ee/1610181667/spordikohus-lubas-venemaa-hokikoondised-maailmameistrivoistlustele">ERR</a> · <a class="src" href="https://sport.err.ee/1610181955/rauno-parras-cas-i-otsus-ei-tulnud-ullatusena">ERR</a> · <a class="src" href="https://sport.err.ee/1610176606/venemaa-sai-suure-tiitlivoistluse-korraldusoiguse">ERR</a></div></li>
+<li><div class="qrow"><span class="num">11</span><div class="q">Millise paadiklassi purjetamise maailmameistrivõistlused toimuvad 2029. aasta augustis Tallinnas?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Draakon-klass</b></div><div class="fu"><span class="lbl">Lisaküsimus</span> millised linnad jäid hääletusel Tallinnale alla? <b>Douarnenez (Prantsusmaa) ja Sanremo (Itaalia)</b></div><div class="fu"><span class="lbl">Täpsustus</span> Hääletus lõppes 20–5–3 Tallinna kasuks. Kandidatuuri esitasid Eesti Draakon-klassi purjetajate liit ja Kalevi Jahtklubi.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610177095/tallinn-voorustab-2029-aastal-suurt-purjetamispidu">ERR</a> · <a class="src" href="https://sport.postimees.ee/8571383">Postimees</a></div></li>
+<li><div class="qrow"><span class="num">12</span><div class="q">Millise linna valis Euroopa kergejõustikuliit 22.10 2030. aasta kergejõustiku Euroopa meistrivõistluste korraldajaks?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Helsingi</b></div><div class="fu"><span class="lbl">Lisaküsimus</span> mitmendat korda korraldab Helsingi kergejõustiku EM-i? <b>neljandat korda, rohkem kui ükski teine linn</b></div><div class="fu"><span class="lbl">Täpsustus</span> Helsingi edestas Brüsselit. 2029. aasta sise-EM toimub Poolas Torunis.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610173015/kergejoustiku-em-naaseb-helsingisse">ERR</a> · <a class="src" href="https://sport.postimees.ee/8570484">Postimees</a></div></li>
+</ol>
+</section>
+
+<section id="t2">
+<h2>Tase 2: 14 lisafakti</h2>
+<ul class="t2">
+<li><div class="clue">2026. aasta autoralli maailmameister (esimene tiitel; enne seda kuuel hooajal viis korda teine)</div><div class="a2">Elfyn Evans (Wales, Toyota); tiitel selgus 4.10</div><div class="meta">20.–24.10 · <a class="src" href="https://sport.err.ee/1610171254/itaalia-meedia-tanak-teeb-toyota-roolis-kaasa-taishooaja">ERR</a> · <a class="src" href="https://sport.delfi.ee/artikkel/120619950">Delfi</a></div></li>
+<li><div class="clue">Eesti maailmameistrid kulturismi ja fitnessi MM-il Hispaanias (Santa Susanna)</div><div class="a2">Carolin Vaiksalu (maailmarekordiga 498 p) ja Siret Tara</div><div class="meta">31.10 · <a class="src" href="https://sport.err.ee/1610182273/eesti-kulturismi-ja-fitnessisportlased-voitsid-mm-i-avapaeval-kaks-kulda">ERR</a></div></li>
+<li><div class="clue">Eesti U-20 meeste võrkpallikoondis Ida-Euroopa Võrkpalliassotsiatsiooni (EEVZA) meistrivõistlustel</div><div class="a2">Võitis turniiri (finaalis Läti 3:1) ja pääses 2027. aasta EM-ile; Andres Jefanov tegi finaalis 36 punkti</div><div class="meta">31.10 · <a class="src" href="https://sport.err.ee/1610182384/eevza-meistriks-tulnud-u-20-vorkpallikoondis-kindlustas-em-pileti">ERR</a></div></li>
+<li><div class="clue">14-aastane jalgpallur, kes lõi väravat kuues järjestikuses koondisemängus (Eesti kõigi koondiste rekord)</div><div class="a2">Hanna Valner (neidude U-15 koondis)</div><div class="meta">21.10 · <a class="src" href="https://sport.err.ee/1610172466/14-aastane-rundaja-nihutas-eesti-jalgpallikoondiste-varavarekordit">ERR</a></div></li>
+<li><div class="clue">Murdmaajooksu Balti meistrivõistlused Järvakandis</div><div class="a2">Eesti võitis 5. aastat järjest võistkondlikult; meistrid Leonid Latsepov ja Helen Bell</div><div class="meta">24.10 · <a class="src" href="https://sport.err.ee/1610176447/eesti-voitis-viiendat-aastat-jarjest-murdmaajooksu-balti-meistrivoistlused">ERR</a></div></li>
+<li><div class="clue">Inglismaa meister Arsenal langes Inglismaa liigakarikast neljanda liiga klubi vastu</div><div class="a2">Fleetwood Town (1:1, penaltid 5:3)</div><div class="meta">27.10 · <a class="src" href="https://sport.err.ee/1610178886/inglismaa-meister-arsenal-kaotas-karikasarjas-neljanda-liiga-klubile">ERR</a></div></li>
+<li><div class="clue">Cristiano Ronaldo kübaratrikk Al Nassri eest: mitu ametlikku karjääriväravat?</div><div class="a2">985 (tuhandest puudu 15); Messil 936</div><div class="meta">29.10 · <a class="src" href="https://sport.err.ee/1610181016/kubaratriki-loonud-ronaldol-on-tuhandest-varavast-veel-15-puudu">ERR</a></div></li>
+<li><div class="clue">Iluuisutamise Grand Prix' sarja avaetapp Prantsusmaal Angers'is, meeste üksiksõit</div><div class="a2">Aleksandr Selevko 4. (lühikava järel 2.); võitis Adam Siao Him Fa</div><div class="meta">25.10 · <a class="src" href="https://sport.err.ee/1610176639/selevko-langes-vabakavaga-esikolmikust-valja">ERR</a></div></li>
+<li><div class="clue">Suusahüpete suvise Grand Prix' sarja viimane etapp Klingenthalis</div><div class="a2">Artti Aigro 5. koht (270,6 p)</div><div class="meta">24.10 · <a class="src" href="https://sport.err.ee/1610176213/aigro-sai-suvise-gp-sarja-viimasel-etapil-viienda-koha">ERR</a></div></li>
+<li><div class="clue">Mäesuusatamise maailmakarika hooaja avaetapp Söldenis, naiste suurslaalom</div><div class="a2">Paula Moltzan (USA), karjääri esimene MK-võit</div><div class="meta">24.10 · <a class="src" href="https://sport.err.ee/1610176228/ameeriklanna-alustas-mk-hooaega-karjaari-esimese-voiduga">ERR</a></div></li>
+<li><div class="clue">Naiste maratoni olümpiavõitja (Tokyo) ja maailmameister, kes andis positiivse dopinguproovi (EPO)</div><div class="a2">Peres Jepchirchir (Keenia)</div><div class="meta">23.10 · <a class="src" href="https://sport.err.ee/1610174848/maratoni-olumpiavoitja-ja-maailmameister-andis-positiivse-dopinguproovi">ERR</a></div></li>
+<li><div class="clue">Sportvõimlemise MM Rotterdamis: kes lõpetas USA naiskonna seitsme järjestikuse MM-kulla seeria?</div><div class="a2">Hiina (esimene naiskondlik MM-tiitel 20 aasta järel)</div><div class="meta">22.10 · <a class="src" href="https://sport.err.ee/1610172868/usa-voimlemisnaiste-pikk-edulugu-sai-otsa">ERR</a></div></li>
+<li><div class="clue">Kus sõidetakse 2027. aasta Dakari rallit?</div><div class="a2">Portugalis (proloog ja 1. katse) ja Marokos: Aafrikas esimest korda pärast 2007. aastat (2008. a ralli jäi ära)</div><div class="meta">30.10 · <a class="src" href="https://sport.err.ee/1610181733/dakari-ralli-algab-euroopast-ja-naaseb-aafrika-pinnale">ERR</a></div></li>
+<li><div class="clue">Ainsad suveolümpiaalade sportlased, kes said EOK-lt A-kategooria toetuse</div><div class="a2">Epeenaiskond (Embrich, Lehis, Beljajeva, Zuikova; MM-hõbe)</div><div class="meta">28.10 · <a class="src" href="https://sport.err.ee/1610179105/eok-tippspordikomisjon-kinnitas-team-estonia-suvealade-toetused">ERR</a> · <a class="src" href="https://sport.postimees.ee/8572801">Postimees</a></div></li>
+</ul>
+</section>
+
+</main>
+</body>
+</html>
