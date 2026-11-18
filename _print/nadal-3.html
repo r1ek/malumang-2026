@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html lang="et"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nädal 3 (16.–20.11) — mälumängu õppematerjal</title>
-<style>:root{color-scheme:light;--bg:#E7EDF1;--fg:#14213D;--mut:#5B6B82;--acc:#2F55A4;--line:#d3dce5;--card:#fff}
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spordinädal 16.–18.11.2026 — mälumängu õppematerjal</title>
+<style>
+:root{--bg:#fafaf7;--fg:#1d1d1b;--mut:#5f5f5a;--acc:#0b5cad;--star:#b25e00;--card:#fff;--line:#e3e2dc;--abg:#eef4fb}
+
+*{box-sizing:border-box}
 body{margin:0;font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--fg)}
-main{max-width:900px;margin:auto;padding:28px 16px 60px} h1{font-size:1.5rem;margin:0 0 6px}
-.box{background:var(--card);border:1px dashed var(--line);border-radius:10px;padding:22px;color:var(--mut);margin-top:18px}</style>
+header{padding:20px 16px 8px;max-width:900px;margin:auto}
+h1{font-size:1.5rem;margin:0 0 4px}
+.sub{color:var(--mut);font-size:.92rem}
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav div{max-width:900px;margin:auto;padding:8px 16px;display:flex;gap:6px;overflow-x:auto;white-space:nowrap}
+nav a{font-size:.85rem;padding:4px 10px;border:1px solid var(--line);border-radius:999px;color:var(--fg);text-decoration:none}
+main{max-width:900px;margin:auto;padding:8px 16px 60px}
+section{margin-top:26px}
+h2{font-size:1.15rem;border-bottom:2px solid var(--acc);padding-bottom:4px}
+ul.f{list-style:none;padding:0;margin:0}
+ul.f li{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:9px 12px;margin:7px 0}
+ul.f li.s{border-left:4px solid var(--star)}
+.d{color:var(--mut);font-size:.8rem;margin-right:6px;font-variant-numeric:tabular-nums}
+.src{font-size:.8rem;white-space:nowrap}
+a{color:var(--acc)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.q li{margin:4px 0}
+details summary{cursor:pointer;color:var(--acc)}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+td,th{border:1px solid var(--line);padding:4px 7px;text-align:left}
+.legend{font-size:.85rem;color:var(--mut)}
+.star{color:var(--star)}
+ol.cards{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ol.cards li{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--star);border-radius:10px;padding:12px 14px;margin:0}
+.qrow{display:flex;gap:10px;align-items:flex-start}
+.num{flex:none;width:26px;height:26px;border-radius:50%;background:var(--star);color:#fff;font-weight:700;font-size:.85rem;display:flex;align-items:center;justify-content:center}
+.q{font-weight:600;line-height:1.35}
+.a{margin:10px 0 0 36px;padding:8px 10px;background:var(--abg);border-radius:6px;font-size:1.02rem}
+.fu{margin:6px 0 0 36px;font-size:.9rem;color:var(--mut)}
+.fu b{color:var(--fg)}
+.lbl{display:inline-block;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;font-weight:700;color:var(--mut);margin-right:6px}
+.a .lbl{color:var(--acc)}
+.meta{margin:6px 0 0 36px;font-size:.78rem;color:var(--mut)}
+
+ol.cards .hd{display:flex;gap:10px;align-items:flex-start}
+ol.cards .h{font-weight:700;font-size:1.05rem;line-height:1.35}
+ol.cards .grid{display:grid;grid-template-columns:minmax(110px,170px) 1fr;margin:10px 0 0 36px;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+ol.cards .k,ol.cards .v{padding:6px 10px;border-top:1px solid var(--line);font-size:.93rem}
+ol.cards .k{color:var(--mut);background:var(--abg)}
+ol.cards .grid>div:nth-child(-n+2){border-top:none}
+ol.cards .lq{margin:8px 0 0 36px;font-size:.88rem;color:var(--mut)}
+@media (max-width:560px){ol.cards .grid{grid-template-columns:1fr;margin-left:0}ol.cards .k{border-top:1px solid var(--line);padding-bottom:2px;font-size:.78rem}ol.cards .v{border-top:none;padding-top:2px}ol.cards .lq,ol.cards .meta{margin-left:0}}
+.test{margin-top:14px;background:var(--card);border:1px dashed var(--acc);border-radius:10px;padding:12px 14px}
+.test ol{margin:8px 0;padding-left:22px}
+.ansl{font-size:.85rem;color:var(--mut);border-top:1px dashed var(--line);padding-top:6px}
+ul.t2{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+ul.t2 li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+ul.t2 .clue{font-size:.88rem;color:var(--mut)}
+ul.t2 .a2{font-weight:700;margin-top:4px;padding-top:4px;border-top:1px dashed var(--line)}
+ul.t2 .meta{margin:6px 0 0}
+details.big{margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:0}
+details.big>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px;font-weight:600;font-size:1.02rem;border-radius:10px}
+details.big>summary::-webkit-details-marker{display:none}
+details.big>summary:hover{background:var(--abg)}
+details.big .sh{flex:none;font-size:.8rem;font-weight:700;color:var(--bg);background:var(--acc);padding:5px 12px;border-radius:999px}
+details.big .sh::before{content:"▸ "}
+details.big[open] .sh::before{content:"▾ "}
+details.big .sh::after{content:" · ava"}
+details.big[open] .sh::after{content:" · sulge"}
+details.big[open]>summary{border-bottom:1px solid var(--line);border-radius:10px 10px 0 0}
+details.big>section,details.big>section+section{padding:0 16px 8px}
+
+</style>
 <meta name="robots" content="noindex,nofollow"><link rel="icon" href="data:,"><style id="mmprint-css">
 @page{size:A4;margin:10mm 11mm}
 .mm-screen,.hero .board,.hero .eyebrow,.hero .lead{display:none!important}
@@ -49,4 +116,68 @@ h2,h3,summary{break-after:avoid}
 document.querySelectorAll('details').forEach(function(d){d.open=true;});
 document.querySelectorAll('.ans[hidden],.a[hidden]').forEach(function(e){e.hidden=false;});
 var t=document.getElementById('test');if(t)t.classList.add('checked');}
-if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',prep);else prep();window.addEventListener('load',prep);setTimeout(prep,800);})();</script></head><body><main><h1>Spordinädal: Nädal 3 (16.–20.11)</h1><div class="box">⏳ Tuleb 20.11 — viimase nädala uudised ja kokkuvõttev kordamisleht.</div></main></body></html>
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',prep);else prep();window.addEventListener('load',prep);setTimeout(prep,800);})();</script></head>
+<body>
+<header>
+<h1>Spordinädal 16.–18. november 2026</h1>
+<div class="sub">Spordimälumäng 21.11.2026 · nädalakokkuvõte nr 3<br>
+Katab 16.–18.11 (seni; täiendatakse). Peamine allikas: <b>ERR Sport</b> (kõik ERR-i sporditeemad 16.–18.11 läbi vaadatud). Lõpus on Postimehe ja Delfi pealkirjad, mida ERR-is ei olnud.</div>
+</header>
+<nav><div><a href="#top">⭐ Tase 1</a><a href="#t2">Tase 2</a><a href="#koik">Kõik uudised</a><a href="#lisa">Postimees/Delfi</a><a href="#ees">Ees ootab</a></div></nav>
+<main>
+
+<section>
+<div class="box"><span class="legend"><span class="star">▌</span> oranž äär = tõenäoline küsimus · kuupäev = sündmuse või uudise kuupäev</span></div>
+</section>
+
+<section id="top">
+<h2>⭐ Tase 1: 12 kõige tõenäolisemat küsimust</h2>
+<p class="legend">Järjestatud tõenäosuse järgi.</p>
+<ol class="cards">
+<li><div class="qrow"><span class="num">1</span><div class="q">Jalgpall: kes lõi 16.11 Tallinnas Rahvuste liiga mängus Eesti võiduvärava, kui Eesti alistas Bulgaaria 2:1?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Kevor Palumets</b> (60. minutil peaga, Markus Poomi karistuslöögist)</div><div class="fu"><span class="lbl">Lisaküsimus</span> kes lõi Eesti esimese värava (oma esimese koondisevärava)? <b>Patrik Kristal</b> (7.–8. minut)</div><div class="fu"><span class="lbl">Täpsustus</span> Bulgaaria viigivärava lõi Svetoslav Kovachev. Karel Mustmaa sai üleminutitel punase kaardi. Bulgaaria polnud varem kunagi Eestile kaotanud. Kristal sai 12.11 (neli päeva varem) 19-aastaseks.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610197324/eesti-jalgpallikoondis-pani-aastale-voiduka-punkti">ERR</a> · <a class="src" href="https://sport.err.ee/1610197966/voiduvarava-autor-palumets-olen-koige-onnelikum-inimene">ERR</a> · <a class="src" href="https://sport.delfi.ee/artikkel/120625739">Delfi</a></div></li>
+<li><div class="qrow"><span class="num">2</span><div class="q">Jalgpall, Rahvuste liiga: mitmenda koha sai Eesti C-divisjoni 4. alagrupis ja milline koondis võitis alagrupi?</div></div><div class="a"><span class="lbl">Vastus</span> <b>2. koht (12 punkti); alagrupi võitis Island (14 punkti)</b></div><div class="fu"><span class="lbl">Lisaküsimus</span> mitmendale kohale tõusis Eesti 18.11 avaldatud FIFA edetabelis? <b>117. (+5 kohta)</b></div><div class="fu"><span class="lbl">Täpsustus</span> Eesti võitis 3 ja viigistas 3 mängu (väravad 5:2) ning on 8 mängu järjest kaotuseta. Märtsis mängib Eesti play-off'is B-divisjoni pääsu nimel. Vastane on Põhja-Makedoonia, Gruusia, Iisrael või Rumeenia ja selgub reedese (20.11) loosiga. Island võitis Luksemburgi 3:0. 117. koht on Eesti parim pärast 2023. aasta septembrit.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610197960/henn-poisid-ei-murdunud-ja-leidsime-teisel-poolajal-oiged-kaigud">ERR</a> · <a class="src" href="https://sport.err.ee/1610199001/haalandi-penalti-kindlustas-norrale-dramaatilisel-moel-edasipaasu">ERR</a> · <a class="src" href="https://sport.delfi.ee/artikkel/120625779">Delfi</a></div></li>
+<li><div class="qrow"><span class="num">3</span><div class="q">Kabe: kes tuli 17.11 Tallinnas peetud tiitlimatšis rahvusvahelise kabe naiste maailmameistriks?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Viktoria Motritško</b> (Ukraina, tiitlikaitsja)</div><div class="fu"><span class="lbl">Lisaküsimus</span> keda ta matšis alistas? <b>Darja Tkatšenko</b> (viiekordne maailmameister, esindab Hollandit)</div><div class="fu"><span class="lbl">Täpsustus</span> Matš kestis kümme päeva. Üheksast klassikalisest partiist võitis Motritško ühe, aga reeglite järgi oli vaja kaks võitu. Otsustava võidu sai ta 17.11 seitsmendas lisapartiis (kiir-, välk- ja supervälkpartiid).</div><div class="meta"><a class="src" href="https://sport.err.ee/1610198836/tallinnas-selgus-kabe-naiste-maailmameister">ERR</a> · <a class="src" href="https://sport.postimees.ee/8585339">Postimees</a></div></li>
+<li><div class="qrow"><span class="num">4</span><div class="q">Korvpall: kes viskas 17.11 Tallinnas Eesti naiste koondise resultatiivseimana 26 punkti, kui Eesti alistas EM-valikmängus Rumeenia 72:68?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Anna Gret Asi</b></div><div class="fu"><span class="lbl">Lisaküsimus</span> kes on Eesti naiste korvpallikoondise peatreener? <b>Toomas Annuk</b></div><div class="fu"><span class="lbl">Täpsustus</span> Eesti on 2029. aasta EM-i eelvalikus kahe võiduga kaotuseta (enne võideti võõrsil Põhja-Makedooniat 86:51). Edasi pääseb ainult kolmese alagrupi võitja. Veebruaris mängitakse kodus Põhja-Makedooniaga ja võõrsil (Bukarestis) Rumeeniaga.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610198824/eesti-naiste-korvpallikoondis-alistas-ka-rumeenia-ja-jatkab-kaotuseta">ERR</a> · <a class="src" href="https://sport.err.ee/1610198845/peatreener-annuk-mida-raskemalt-voit-tuleb-seda-magusam-on">ERR</a></div></li>
+<li><div class="qrow"><span class="num">5</span><div class="q">Jalgpall: milline Eesti noortekoondisi esindanud poolkaitsja ei saa enam kunagi Eesti koondist esindada, sest mängis 16.11 Saksamaa U-20 koondise eest?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Soufian Gouram</b> (Berliini Hertha)</div><div class="fu"><span class="lbl">Lisaküsimus</span> millise riigi koondise vastu ta Saksamaa eest mängis? <b>Tšehhi U-20 (2:2)</b></div><div class="fu"><span class="lbl">Täpsustus</span> 20-aastane Gouram on maroko isa ja eestlannast ema poeg ning kasvas üles Saksamaal. Ta loobus novembri alguses Eesti A-koondise kutsest. U-20 Eliitliiga mäng on ametlik, jalgpallikodakondsust saab vahetada ainult üks kord.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610197867/gouram-kais-saksamaa-eest-valjakul-ja-sulges-eesti-koondise-ukse">ERR</a></div></li>
+<li><div class="qrow"><span class="num">6</span><div class="q">Jalgpall: mitmenda koha sai Eesti U-19 koondis 17.11 lõppenud EM-valikturniiri alagrupis Türgis?</div></div><div class="a"><span class="lbl">Vastus</span> <b>1. koht</b> (3 võitu, 9 punkti)</div><div class="fu"><span class="lbl">Lisaküsimus</span> kes lõi viimases mängus Slovakkia vastu (1:0) ainsa värava? <b>Rafael Siim Schwarz</b></div><div class="fu"><span class="lbl">Täpsustus</span> Varem võideti Liechtensteini 6:1 ja võõrustajat Türgit 3:1. Alagrupivõit tähendab kohta A-divisjonis ja valikturniiri järgmises ringis (28 koondist); finaalturniiri pääs selgub hilisemas ringis. U-17 koondis lõpetas oma valikturniiri Taanis 2:2 viigiga Walesiga ja jätkab B-tasandil.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610198545/u-19-jalgpallikoondis-lopetas-em-valikturniiri-taiseduga-ja-paases-edasi">ERR</a> · <a class="src" href="https://sport.err.ee/1610198785/eesti-u-17-koondis-viigistas-em-valiksarjas-walesiga">ERR</a></div></li>
+<li><div class="qrow"><span class="num">7</span><div class="q">Tennis: kes võitis 15.11 USA-s Indian Wellsis naiste WTA finaalturniiri (aastalõputurniiri)?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Mirra Andrejeva</b> (Venemaa, 19 a)</div><div class="fu"><span class="lbl">Lisaküsimus</span> keda ta finaalis alistas? <b>Elina Svitolina</b> (Ukraina, 7:5, 6:3)</div><div class="fu"><span class="lbl">Täpsustus</span> Andrejeva võitis oma esimese finaalturniiri settigi kaotamata. Varem tegid seda debüüdil ainult Chris Evert (1972) ja Serena Williams (2001). Viimane teismeline võitja oli Maria Šarapova 2004. aastal. Andrejeva tõusis maailma edetabelis 2. kohale, esireket on Jelena Rõbakina.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610197111/19-aastane-andrejeva-voitis-settigi-kaotamata-wta-finaalturniiri">ERR</a> · <a class="src" href="https://sport.err.ee/1610197186/glinka-langes-edetabelis-200-parema-seast-valja">ERR</a></div></li>
+<li><div class="qrow"><span class="num">8</span><div class="q">Jalgpall: milline koondis lõpetas 15.11 Madridis Rahvuste liigas maailmameister Hispaania 43-mängulise kaotuseta seeria?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Inglismaa</b> (võitis 3:2)</div><div class="fu"><span class="lbl">Lisaküsimus</span> kes lõi Inglismaa avavärava penaltist? <b>Harry Kane</b></div><div class="fu"><span class="lbl">Täpsustus</span> Teised väravad lõid Ezri Konsa ja Ben White. Elliott Anderson sai punase kaardi. Mõlemad pääsesid veerandfinaali. A-divisjoni alagruppide võitjad olid Prantsusmaa, Saksamaa, Inglismaa ja Portugal, teiseks jäid Belgia, Holland, Hispaania ja Norra. Itaalia langes konkurentsist välja. Veerandfinaalid loositakse 20.11.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610197084/inglismaa-lopetas-maailmameister-hispaania-voimsa-seeria">ERR</a> · <a class="src" href="https://sport.err.ee/1610199001/haalandi-penalti-kindlustas-norrale-dramaatilisel-moel-edasipaasu">ERR</a></div></li>
+<li><div class="qrow"><span class="num">9</span><div class="q">Jalgpall: milline Belgia koondise kõigi aegade parim väravakütt teatas 16.11 koondisekarjääri lõpetamisest?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Romelu Lukaku</b> (135 mängu, 94 väravat)</div><div class="fu"><span class="lbl">Lisaküsimus</span> millise koondise vastu lõi ta kõige rohkem väravaid? <b>Eesti</b> (8 väravat 4 mänguga)</div><div class="fu"><span class="lbl">Täpsustus</span> 33-aastane Lukaku debüteeris koondises 2010. aastal ja võitis 2018. aasta MM-il pronksi. Rohkem koondiseväravaid on vaid Cristiano Ronaldol (146), Lionel Messil (126), Ali Daeil (108) ja Sunil Chhetril (95).</div><div class="meta"><a class="src" href="https://sport.err.ee/1610197840/eestit-kollitanud-lukaku-lopetas-resultatiivse-koondisekarjaari">ERR</a></div></li>
+<li><div class="qrow"><span class="num">10</span><div class="q">Võitlussport (taipoks): milline Eesti sportlane jäi 16.11 ilma WBC rahvusvahelisest meistrivööst, mille ta oli 14.11 Tallinnas The League 13 õhtul võitnud?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Sigrid Kapanen</b></div><div class="fu"><span class="lbl">Lisaküsimus</span> mis rekordi The League 13 Tondiraba jäähallis püstitas? <b>Eesti võitlusspordi publikurekord (üle 5000 pealtvaataja)</b></div><div class="fu"><span class="lbl">Täpsustus</span> Kapanen võitis britti Naomi Ridleyt kohtunike häältega, kuid WBC vaatas salvestise üle ja kuulutas matši tulemuseta matšiks (no contest). Tiitel jäi vabaks ja korduskohtumist pakutakse 13.03.2027. WBC tiitli võitis samal õhtul ka Astrid Johanna Grents.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610197885/the-league-pustitas-eesti-voitlusspordi-publikurekordi">ERR</a> · <a class="src" href="https://sport.delfi.ee/artikkel/120625269">Delfi</a></div></li>
+<li><div class="qrow"><span class="num">11</span><div class="q">Autosport: millise margi autoga sõidab kahekordne vormel-1 maailmameister Fernando Alonso jaanuaris Dakari rallil?</div></div><div class="a"><span class="lbl">Vastus</span> <b>Aston Martin</b> (Prodrive'i meeskond)</div><div class="fu"><span class="lbl">Lisaküsimus</span> milline üheksakordne ralli maailmameister on tema tiimikaaslane? <b>Sébastien Loeb</b></div><div class="fu"><span class="lbl">Täpsustus</span> Alonso on 45-aastane ja see on tema teine Dakar: 2020. aastal sai ta Toyotaga 13. koha. Kaardilugeja on viiekordne Dakari mootorrattavõitja Marc Coma, kolmas tiimikaaslane on Lucas Moraes. Dakar algab 9. jaanuaril Portugalis ja põhiosa sõidetakse Marokos.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610198704/fernando-alonso-laheb-jaanuaris-dakari-rallile">ERR</a> · <a class="src" href="https://sport.delfi.ee/artikkel/120625436">Delfi</a></div></li>
+<li><div class="qrow"><span class="num">12</span><div class="q">Jäähoki: milline riik tuli 16.11 Taanis Herningis naiste maailmameistriks?</div></div><div class="a"><span class="lbl">Vastus</span> <b>USA</b> (finaalis Kanada üle 6:2; 12. tiitel)</div><div class="fu"><span class="lbl">Lisaküsimus</span> milline riik võitis pronksi? <b>Rootsi</b> (Soome üle karistusvisetega)</div><div class="fu"><span class="lbl">Täpsustus</span> USA tuli maailmameistriks teist aastat järjest. Kanada ja USA kohtusid finaalis 25. korda: Kanada on võitnud 13 ja USA 12 korda. Kahe väravaga olid USA-st Hilary Knight ja Kelly Pannek.</div><div class="meta"><a class="src" href="https://sport.err.ee/1610197987/usa-hokinaised-tulid-12-korda-maailmameistriks">ERR</a></div></li>
+</ol>
+</section>
+
+<section id="t2">
+<h2>Tase 2: 14 lisafakti</h2>
+<ul class="t2">
+<li><div class="clue">UEFA kandidaat FIFA presidendivalimistel Gianni Infantino vastu</div><div class="a2">Philippe Diallo (Prantsusmaa jalgpalliliidu president); valimised 18.03.2027 Rabatis</div><div class="meta">16.–17.11 · <a class="src" href="https://sport.postimees.ee/8584548">Postimees</a> · <a class="src" href="https://sport.delfi.ee/artikkel/120625597">Delfi</a></div></li>
+<li><div class="clue">Suri vanim elus olnud jalgpalli maailmameister</div><div class="a2">Dino Sani (Brasiilia, 94 a), 1958. aasta MM-i võitja</div><div class="meta">15.11 · <a class="src" href="https://sport.delfi.ee/artikkel/120625328">Delfi</a></div></li>
+<li><div class="clue">NBA kõigi aegade sööduandjate tabelis tõusis 3. kohale (möödus Jason Kiddist)</div><div class="a2">LeBron James (12 092 söötu; ees Chris Paul ja John Stockton)</div><div class="meta">15.11 · <a class="src" href="https://sport.err.ee/1610197234/lebron-james-tousis-koigi-aegade-sooduandjate-tabelis-kolmandaks">ERR</a></div></li>
+<li><div class="clue">NHL: 40 väravasöötu juba 22 mänguga, sama kiiresti kui Wayne Gretzky</div><div class="a2">Connor McDavid (Edmonton Oilers)</div><div class="meta">16.11 · <a class="src" href="https://sport.err.ee/1610197636/nhl-mcdavid-joudis-gretzkyga-samale-pulgale">ERR</a></div></li>
+<li><div class="clue">Autoralli: WRC komisjoni ettepanek – MM-i kõrgeima klassi uus nimi alates 2027 (ainult Rally1 autod; vajab veel maailma mootorispordi nõukogu kinnitust)</div><div class="a2">FIA WRC1 maailmameistrivõistlused (ettepanek)</div><div class="meta">17.11 · <a class="src" href="https://sport.err.ee/1610198818/autoralli-mm-sarja-kavatsetakse-luua-korgemale-klassile-eraldi-arvestus">ERR</a></div></li>
+<li><div class="clue">Murdmaasuusatamine: vigastus jättis ta Beitostøleni hooaja avastardist eemale</div><div class="a2">Johannes Høsflot Klæbo (vasaku pöidla vigastus)</div><div class="meta">17.11 · <a class="src" href="https://sport.err.ee/1610198743/klabo-hooaja-avastart-lukkub-trauma-tottu-edasi">ERR</a></div></li>
+<li><div class="clue">Jalgpall: Saksamaa koondise peatreener, kelle meeskond võitis Hollandit 5:0 (Florian Wirtz 2 väravat)</div><div class="a2">Jürgen Klopp</div><div class="meta">16.11 · <a class="src" href="https://sport.err.ee/1610198140/saksamaa-loi-hollandile-18-minutiga-neli-varavat-ja-napsas-esikoha">ERR</a> · <a class="src" href="https://sport.delfi.ee/artikkel/120625362">Delfi</a></div></li>
+<li><div class="clue">Sulgpalli võistkondliku EM-i finaalturniir Tallinnas (6.–10.01.2027), Eesti naiste esireket</div><div class="a2">Kristin Kuuba; esimest korda mängitakse geimi 15 punktini</div><div class="meta">16.11 · <a class="src" href="https://sport.err.ee/1610197714/eestit-veab-kodusel-sulgpalli-em-il-kristin-kuuba">ERR</a></div></li>
+<li><div class="clue">Eesti orienteerumine tähistas Viljandis 100. sünnipäeva: esimene võistlus</div><div class="a2">19.06.1926 Piritas Kloostrimetsas (4,9 km, 5 kontrollpunkti)</div><div class="meta">17.11 · <a class="src" href="https://sport.err.ee/1610198542/eesti-orienteerumissport-tahistas-viljandis-100-sunnipaeva">ERR</a></div></li>
+<li><div class="clue">9-palli Eesti meister (juunioride maailmameister)</div><div class="a2">Revo Maimre (finaalis Mark Mägi üle 11:6)</div><div class="meta">16.11 · <a class="src" href="https://sport.err.ee/1610197150/juunioride-maailmameister-revo-maimre-krooniti-9-palli-eesti-meistriks">ERR</a></div></li>
+<li><div class="clue">Golf: LIV sarja lagunemise järel liitus Euroopa tuuriga (DP World Tour)</div><div class="a2">Bryson DeChambeau</div><div class="meta">17.11 · <a class="src" href="https://sport.err.ee/1610198629/dechambeau-liitus-vastuolulise-liv-sarja-lagunemise-jarel-euroopa-tuuriga">ERR</a></div></li>
+<li><div class="clue">Korvpalli FIBA Euroopa karikas: Bigbank/Kalev võitis Valmierat 83:81, võidukorv 3 sekundit enne lõppu</div><div class="a2">Kevaughn Allen</div><div class="meta">17.11 · <a class="src" href="https://sport.err.ee/1610198875/bigbank-kalev-voitis-eurosarjas-lopusekundite-korvi-abil">ERR</a></div></li>
+<li><div class="clue">Riik, mis keelas Venemaa ja Valgevene sportlastel (ka neutraalsetel) riiki siseneda</div><div class="a2">Norra (16.11, kohe jõustuv)</div><div class="meta">17.11 · <a class="src" href="https://sport.delfi.ee/artikkel/120625401">Delfi</a> · <a class="src" href="https://sport.postimees.ee/8584773">Postimees</a></div></li>
+<li><div class="clue">Eesti vormelisõitja, kes tegi Madridis vormel-E testil Fortescue Zero Racingu autoga avarii</div><div class="a2">Paul Aron (Alpine'i F1 reservsõitja)</div><div class="meta">18.11 · <a class="src" href="https://sport.err.ee/1610199439/paul-aron-tegi-vormel-e-testisoidul-avarii">ERR</a></div></li>
+</ul>
+</section>
+
+<section id="ees">
+<h2>📅 Ees ootab</h2>
+<ul class="f">
+<li><b>20.11 Rahvuste liiga loosid</b>: A-divisjoni veerandfinaalid ja Eesti märtsikuise play-off'i vastane (Põhja-Makedoonia, Gruusia, Iisrael või Rumeenia).</li>
+<li>Iluuisutamise GP-etapp Helsingis (Petrõkina, Mihhail Selevko, Arlet Levandi) · Tallinn Trophy jätkub (naised reedel, sh Kaljuvere) · 21.11 Põlva Serviti–Praha Dukla (kordusmäng 29.11 Prahas)</li>
+<li>Laskesuusatamise MK-hooaeg algab Kontiolahtis · murdmaasuusatamise MK Rukal 27.–29.11 · korvpall Eesti–Prantsusmaa 27.11 ja Soome–Eesti 30.11</li>
+</ul>
+</section>
+
+</main>
+</body>
+</html>

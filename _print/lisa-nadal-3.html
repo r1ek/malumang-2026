@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spordinädal 16.–18.11.2026 — mälumängu õppematerjal</title>
+<style>
+:root{--bg:#fafaf7;--fg:#1d1d1b;--mut:#5f5f5a;--acc:#0b5cad;--star:#b25e00;--card:#fff;--line:#e3e2dc;--abg:#eef4fb}
+
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--fg)}
+header{padding:20px 16px 8px;max-width:900px;margin:auto}
+h1{font-size:1.5rem;margin:0 0 4px}
+.sub{color:var(--mut);font-size:.92rem}
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav div{max-width:900px;margin:auto;padding:8px 16px;display:flex;gap:6px;overflow-x:auto;white-space:nowrap}
+nav a{font-size:.85rem;padding:4px 10px;border:1px solid var(--line);border-radius:999px;color:var(--fg);text-decoration:none}
+main{max-width:900px;margin:auto;padding:8px 16px 60px}
+section{margin-top:26px}
+h2{font-size:1.15rem;border-bottom:2px solid var(--acc);padding-bottom:4px}
+ul.f{list-style:none;padding:0;margin:0}
+ul.f li{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:9px 12px;margin:7px 0}
+ul.f li.s{border-left:4px solid var(--star)}
+.d{color:var(--mut);font-size:.8rem;margin-right:6px;font-variant-numeric:tabular-nums}
+.src{font-size:.8rem;white-space:nowrap}
+a{color:var(--acc)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.q li{margin:4px 0}
+details summary{cursor:pointer;color:var(--acc)}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+td,th{border:1px solid var(--line);padding:4px 7px;text-align:left}
+.legend{font-size:.85rem;color:var(--mut)}
+.star{color:var(--star)}
+ol.cards{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ol.cards li{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--star);border-radius:10px;padding:12px 14px;margin:0}
+.qrow{display:flex;gap:10px;align-items:flex-start}
+.num{flex:none;width:26px;height:26px;border-radius:50%;background:var(--star);color:#fff;font-weight:700;font-size:.85rem;display:flex;align-items:center;justify-content:center}
+.q{font-weight:600;line-height:1.35}
+.a{margin:10px 0 0 36px;padding:8px 10px;background:var(--abg);border-radius:6px;font-size:1.02rem}
+.fu{margin:6px 0 0 36px;font-size:.9rem;color:var(--mut)}
+.fu b{color:var(--fg)}
+.lbl{display:inline-block;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;font-weight:700;color:var(--mut);margin-right:6px}
+.a .lbl{color:var(--acc)}
+.meta{margin:6px 0 0 36px;font-size:.78rem;color:var(--mut)}
+
+ol.cards .hd{display:flex;gap:10px;align-items:flex-start}
+ol.cards .h{font-weight:700;font-size:1.05rem;line-height:1.35}
+ol.cards .grid{display:grid;grid-template-columns:minmax(110px,170px) 1fr;margin:10px 0 0 36px;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+ol.cards .k,ol.cards .v{padding:6px 10px;border-top:1px solid var(--line);font-size:.93rem}
+ol.cards .k{color:var(--mut);background:var(--abg)}
+ol.cards .grid>div:nth-child(-n+2){border-top:none}
+ol.cards .lq{margin:8px 0 0 36px;font-size:.88rem;color:var(--mut)}
+@media (max-width:560px){ol.cards .grid{grid-template-columns:1fr;margin-left:0}ol.cards .k{border-top:1px solid var(--line);padding-bottom:2px;font-size:.78rem}ol.cards .v{border-top:none;padding-top:2px}ol.cards .lq,ol.cards .meta{margin-left:0}}
+.test{margin-top:14px;background:var(--card);border:1px dashed var(--acc);border-radius:10px;padding:12px 14px}
+.test ol{margin:8px 0;padding-left:22px}
+.ansl{font-size:.85rem;color:var(--mut);border-top:1px dashed var(--line);padding-top:6px}
+ul.t2{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+ul.t2 li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+ul.t2 .clue{font-size:.88rem;color:var(--mut)}
+ul.t2 .a2{font-weight:700;margin-top:4px;padding-top:4px;border-top:1px dashed var(--line)}
+ul.t2 .meta{margin:6px 0 0}
+details.big{margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:0}
+details.big>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px;font-weight:600;font-size:1.02rem;border-radius:10px}
+details.big>summary::-webkit-details-marker{display:none}
+details.big>summary:hover{background:var(--abg)}
+details.big .sh{flex:none;font-size:.8rem;font-weight:700;color:var(--bg);background:var(--acc);padding:5px 12px;border-radius:999px}
+details.big .sh::before{content:"▸ "}
+details.big[open] .sh::before{content:"▾ "}
+details.big .sh::after{content:" · ava"}
+details.big[open] .sh::after{content:" · sulge"}
+details.big[open]>summary{border-bottom:1px solid var(--line);border-radius:10px 10px 0 0}
+details.big>section,details.big>section+section{padding:0 16px 8px}
+
+</style>
+<meta name="robots" content="noindex,nofollow"><link rel="icon" href="data:,"><style id="mmprint-css">
+@page{size:A4;margin:10mm 11mm}
+.mm-screen,.hero .board,.hero .eyebrow,.hero .lead{display:none!important}
+@media screen and (max-width:600px){.qlist,.round{column-count:1!important}}
+html{font-size:10pt!important}
+body{font:10pt/1.32 Georgia,"Times New Roman",serif!important;background:#fff!important;color:#000!important;margin:0!important}
+*,*::before,*::after{background:transparent!important;color:#000!important;box-shadow:none!important;text-shadow:none!important;border-radius:0!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body *{border-color:#bbb!important;max-width:none!important}
+nav,.search,.up,.chips,#treset,#tcheck,.dock,#scorebox,input,button,.verdict,.ovr,.tools,.mmnav-bar,.hero .cells,.chev,.dots,.legend,.sh,img,svg,picture{display:none!important}
+header,.hero,main,section,.wrap,.card,.box,article,details,.body{margin:0!important;padding:0!important;border:0!important;min-height:0!important;height:auto!important;position:static!important}
+h1{font:700 15pt/1.2 Georgia,serif!important;margin:0 0 4pt!important}
+h2{font:700 12.5pt/1.2 Georgia,serif!important;margin:10pt 0 3pt!important;border-bottom:1px solid #000!important;padding-bottom:1pt!important}
+h3{font:700 10.5pt/1.25 Georgia,serif!important;margin:7pt 0 2pt!important}
+summary{display:block!important;padding:0!important;margin:6pt 0 2pt!important;cursor:auto}
+summary::-webkit-details-marker,summary::marker{display:none!important;content:""!important}
+p,li,div,td,th{font-size:10pt!important;line-height:1.32!important}
+p{margin:0 0 3pt!important}
+ul,ol{margin:0 0 4pt!important;padding-left:16pt!important}
+li{margin:0 0 2.5pt!important;padding:0!important;border:0!important;min-height:0!important}
+ol.cards>li,ul.t2>li,.qa,.tq{margin:0 0 4pt!important;padding:0 0 3pt!important;border:0!important;border-bottom:1px dotted #999!important}
+ul.t2,ol.cards,.grid,.cells{display:block!important;columns:auto!important}
+table{border-collapse:collapse!important;width:100%!important;font-size:9pt!important}
+td,th{border:1px solid #999!important;padding:1.5pt 3pt!important;font-size:9pt!important}
+a{text-decoration:none!important}
+b,strong,.lbl,.num,.q{font-weight:700!important}
+.lbl{font-size:8.5pt!important;text-transform:uppercase}
+.meta,.note,.sub,small,.d{font-size:8.5pt!important;color:#333!important}
+*{font-family:Georgia,"Times New Roman",serif!important}
+body div{padding:0!important;margin-top:0!important;margin-bottom:0!important;border-top:0!important;border-left:0!important;border-right:0!important;min-height:0!important}
+body div:not(.qi):not(.tq):not(.card){border-bottom:0!important}
+.qi,.qa,.tq,.card,ol.cards>li,ul.t2>li{margin:0 0 3pt!important;padding:0 0 2.5pt!important;border:0!important;border-bottom:1px dotted #999!important;display:block!important}
+.a,.a2,.fu,.ans,.answer,.res{margin:1pt 0 0!important;padding:0!important;border:0!important;display:block!important}
+.qrow{display:flex!important;gap:5pt}
+.num,.qn{flex:none}
+.qlist,.round{display:block!important;column-count:2!important;column-gap:16pt!important;column-rule:1px solid #ddd}
+.qlist>li,.qlist>.qi{break-inside:avoid}
+.round>h2,.round>h3,.round>summary,.round>.lvl,.round>p{column-span:all}
+.tq .res{display:block!important}
+li,.tq,.qa,.qi,.card{break-inside:avoid}
+h2,h3,summary{break-after:avoid}
+</style><script id="mmprint-js">(function(){function prep(){
+document.querySelectorAll('details').forEach(function(d){d.open=true;});
+document.querySelectorAll('.ans[hidden],.a[hidden]').forEach(function(e){e.hidden=false;});
+var t=document.getElementById('test');if(t)t.classList.add('checked');}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',prep);else prep();window.addEventListener('load',prep);setTimeout(prep,800);})();</script></head>
+<body><main><h1>Lisa: Nädal 3 · 16.–18.11 — kõik uudised</h1><details class="big" id="koik"><summary><span class="st">📚 Kõik uudised alade kaupa</span><span class="sh">~55 fakti</span></summary>
+
+<section id="jalg">
+<h2>⚽ Jalgpall</h2>
+<ul class="f">
+<li class="s"><span class="d">16.11</span><b>Eesti–Bulgaaria 2:1</b>: väravad Patrik Kristal (esimene koondisevärav) ja Kevor Palumets (60'), Bulgaarialt Svetoslav Kovachev. Karel Mustmaa sai punase kaardi. Bulgaaria kaotas Eestile esimest korda. <a class="src" href="https://sport.err.ee/1610197324/eesti-jalgpallikoondis-pani-aastale-voiduka-punkti">ERR</a> · <a class="src" href="https://sport.err.ee/1610197966/voiduvarava-autor-palumets-olen-koige-onnelikum-inimene">ERR</a></li>
+<li class="s"><span class="d">16.11</span><b>Eesti sai C-divisjoni alagrupis 2. koha (12 p), Island võitis (14 p).</b> Märtsis mängib Eesti play-off'i B-divisjoni nimel (Põhja-Makedoonia, Gruusia, Iisrael või Rumeenia, loos 20.11). Henn: „Oleme kindlasti rahul.” <a class="src" href="https://sport.err.ee/1610197960/henn-poisid-ei-murdunud-ja-leidsime-teisel-poolajal-oiged-kaigud">ERR</a> · <a class="src" href="https://sport.err.ee/1610199001/haalandi-penalti-kindlustas-norrale-dramaatilisel-moel-edasipaasu">ERR</a></li>
+<li><span class="d">17.11</span>Raul Ojassaar (Soccernet): 8 mängu kaotuseta, viimati oli sellist hoogu 15 aastat tagasi (EM-valiksarja play-off). <a class="src" href="https://sport.err.ee/1610198323/ojassaar-koondisest-viimati-kogesime-sellist-hoogu-15-aastat-tagasi">ERR</a></li>
+<li class="s"><span class="d">16.11</span><b>Soufian Gouram mängis Saksamaa U-20 koondise eest</b> (Tšehhiga 2:2) ega saa enam kunagi Eestit esindada. <a class="src" href="https://sport.err.ee/1610197867/gouram-kais-saksamaa-eest-valjakul-ja-sulges-eesti-koondise-ukse">ERR</a></li>
+<li class="s"><span class="d">17.11</span><b>U-19 koondis võitis Slovakkiat 1:0 (Rafael Schwarz)</b> ja lõpetas EM-valikturniiri Türgis 3 võiduga 1. kohal. <a class="src" href="https://sport.err.ee/1610198545/u-19-jalgpallikoondis-lopetas-em-valikturniiri-taiseduga-ja-paases-edasi">ERR</a></li>
+<li><span class="d">17.11</span>U-17 koondis mängis Walesiga 2:2 (Zotov, Kaalma) ja jätkab B-tasandil. Varem kaotati Iirimaale 0:5 ja Taanile 1:5. <a class="src" href="https://sport.err.ee/1610198785/eesti-u-17-koondis-viigistas-em-valiksarjas-walesiga">ERR</a></li>
+<li><span class="d">17.11</span>Oliver Jürgens debüteeris Itaalia Serie D-s Lascarise eest. <a class="src" href="https://sport.err.ee/1610198383/jurgens-tuli-valjakule-itaalia-tugevuselt-neljandas-liigas">ERR</a></li>
+<li><span class="d">16.11</span>Saalijalgpalli meistriliiga 5. voor: Narva United võitis Saku Sportingut viimase sekundi väravaga 7:6. Liider on Bunker Partner (13 p). <a class="src" href="https://sport.err.ee/1610197357/saalijalgpalli-meistriliiga-voor-pakkus-viimase-minuti-otsustavaid-varavaid">ERR</a></li>
+<li class="s"><span class="d">15.11</span><b>Inglismaa võitis Madridis Hispaaniat 3:2</b> ja lõpetas maailmameistri 43-mängulise kaotuseta seeria. Belgia võitis Itaaliat 4:1, Itaalia langes konkurentsist välja. <a class="src" href="https://sport.err.ee/1610197084/inglismaa-lopetas-maailmameister-hispaania-voimsa-seeria">ERR</a></li>
+<li><span class="d">16.11</span>Saksamaa (peatreener Jürgen Klopp) võitis Hollandit 5:0 ja tuli alagrupi võitjaks. Florian Wirtz lõi 2 väravat. Šveits võitis Šotimaad 4:0 ja tõusis A-divisjoni. <a class="src" href="https://sport.err.ee/1610198140/saksamaa-loi-hollandile-18-minutiga-neli-varavat-ja-napsas-esikoha">ERR</a></li>
+<li><span class="d">17.11</span>Norra tuli Taanis 0:2 kaotusseisust välja ja võitis 3:2. Erling Haaland lõi 2 väravat, viimase üleminutitel penaltist. Portugal võitis Walesi 3:2 ja grupi. Veerandfinalistid: Prantsusmaa, Saksamaa, Inglismaa, Portugal, Belgia, Holland, Hispaania, Norra. <a class="src" href="https://sport.err.ee/1610199001/haalandi-penalti-kindlustas-norrale-dramaatilisel-moel-edasipaasu">ERR</a></li>
+<li class="s"><span class="d">16.11</span><b>Romelu Lukaku lõpetas koondisekarjääri</b> (135 mängu, 94 väravat, Belgia rekord). Eestile lõi ta 8 väravat. <a class="src" href="https://sport.err.ee/1610197840/eestit-kollitanud-lukaku-lopetas-resultatiivse-koondisekarjaari">ERR</a></li>
+<li><span class="d">15.11</span>Ronaldinho (46) mängis Serie C-s Ravenna eest ja andis väravasöödule eelnenud söödu (Ronaldinho → Lonardi → värav Donati). Eelmisest ametlikust mängust oli möödunud 4068 päeva. <a class="src" href="https://sport.err.ee/1610197612/tunjovi-liigarivaaliga-liitunud-ronaldinho-naasis-4068-paeva-jarel-platsile">ERR</a></li>
+<li><span class="d">17.11</span>Brasiilia võitis Singapuris Singapuri 7:0. Vinicius Junior lõi 21 minutiga kübaratriki. <a class="src" href="https://sport.err.ee/1610198692/brasiilia-jalgpallikoondis-loi-singapuri-puuri-palle-tais">ERR</a></li>
+<li><span class="d">18.11</span>Pochettino pidas USA koondisega viimase mängu (võit Haiti üle). USA kohtub CONCACAF-i Rahvuste liiga poolfinaalis Mehhikoga. <a class="src" href="https://sport.err.ee/1610199346/pochettino-lopetas-usa-koondise-peatuki-voidukalt">ERR</a></li>
+<li><span class="d">17.11</span>FC Andorra väravavaht Jesus Owono sai Jesus de Migueli surmaga lõppenud kokkupõrke eest 12 mängu võistluskeelu. Klubi omanik Gerard Piqué pole rahul. <a class="src" href="https://sport.err.ee/1610198422/varavavaht-sai-surmava-kokkuporke-eest-pika-voistluskeelu-pique-pole-rahul">ERR</a></li>
+<li><span class="d">18.11</span>Mbappé suunas rassistlikult hüüdnud mees sai Hispaanias peaaegu aastase tingimisi vangistuse ja kaheaastase staadionikeelu. <a class="src" href="https://sport.err.ee/1610198770/rassistlikud-huuded-mbappe-suunas-toid-pea-aastase-tingimisi-vangistuse">ERR</a></li>
+</ul>
+</section>
+
+<section id="korv">
+<h2>🏀 Korvpall, võrkpall ja käsipall</h2>
+<ul class="f">
+<li class="s"><span class="d">17.11</span><b>Naiste korvpallikoondis võitis Tallinnas Rumeeniat 72:68</b> (Anna Gret Asi 26 p) ja on EM-eelvalikus kahe võiduga kaotuseta. <a class="src" href="https://sport.err.ee/1610198824/eesti-naiste-korvpallikoondis-alistas-ka-rumeenia-ja-jatkab-kaotuseta">ERR</a></li>
+<li><span class="d">17.11</span>FIBA Euroopa karikas: Bigbank/Kalev võitis Valmierat 83:81 (Kevaughn Allen 18 p ja võidukorv). BC Pärnu kaotas Nancyle 64:100. <a class="src" href="https://sport.err.ee/1610198875/bigbank-kalev-voitis-eurosarjas-lopusekundite-korvi-abil">ERR</a> · <a class="src" href="https://sport.err.ee/1610198878/lauas-hatta-jaanud-parnu-sai-eurosarjas-suurelt-luua">ERR</a></li>
+<li><span class="d">16.11</span>Korvpalliliidu õiguskomisjon jättis Peep Pahvi 5-mängulise juhendamiskeelu ja Keila Basketi 2000-eurose trahvi jõusse. <a class="src" href="https://sport.err.ee/1610197663/eesti-korvpalliliidu-oiguskomisjon-jattis-peep-pahvi-karistuse-jousse">ERR</a></li>
+<li><span class="d">15.11</span>NBA: LeBron James tõusis sööduandjate tabelis 3. kohale. Lakers võitis 8. mängu järjest (Dončić 43 p). <a class="src" href="https://sport.err.ee/1610197234/lebron-james-tousis-koigi-aegade-sooduandjate-tabelis-kolmandaks">ERR</a></li>
+<li><span class="d">17.11</span>NBA: Quentin Grimes viskas Charlotte'ile 47 punkti (10 kolmest), Lakers võitis 9. mängu järjest. <a class="src" href="https://sport.err.ee/1610199163/grimesi-kolmesed-aitasid-lakersil-kaotusseisust-valja-kaevata">ERR</a></li>
+<li><span class="d">17.11</span>NCAA: Stefan Vaaksi Illinois võitis võõrsil Duke'i 21 punktiga, Andrej Stojakovic viskas 46 punkti. <a class="src" href="https://sport.err.ee/1610198974/vaaks-ja-illinois-alistasid-kindlalt-duke-i-stojakovic-pustitas-rekordi">ERR</a></li>
+<li><span class="d">18.11</span>Maik-Kalev Kotsar viskas Jaapanis Yokohama eest 18 punkti, kaotusteseeria katkes. <a class="src" href="https://sport.err.ee/1610199394/yokohama-pani-kotsari-tugeva-esituse-toel-lopu-kaotusteseeriale">ERR</a></li>
+<li><span class="d">17.11</span>Euroliiga: Sasha Vezenkov viskas keskjoonelt viigikorvi, Olympiakos võitis Maccabit lisaajal. Žalgiris võitis Bayerni 117:114. <a class="src" href="https://sport.err.ee/1610199040/olympiakos-ja-zalgiris-teenisid-lisaajal-voidulisa">ERR</a></li>
+<li><span class="d">16.11</span>Võrkpalli naiste meistriliiga: Viljandi Metall võitis Võrut 3:0 ja tõusis teiseks. Liider on TalTech/Nordaid. <a class="src" href="https://sport.err.ee/1610197177/teiseks-tousnud-viljandi-metall-jatkab-kaotuseta">ERR</a></li>
+<li><span class="d">18.11</span>Käsipall: Põlva Serviti kohtub EHF European Cupi 3. ringis Praha Duklaga. Serviti jõudis 2021. aastal veerandfinaali. <a class="src" href="https://sport.err.ee/1610199325/ainsa-eesti-klubina-eurosarjas-jatkav-serviti-laheb-kokku-praha-klubiga">ERR</a></li>
+</ul>
+</section>
+
+<section id="tali">
+<h2>⛷️ Talialad ja jäähoki</h2>
+<ul class="f">
+<li class="s"><span class="d">16.11</span><b>USA tuli Herningis jäähoki naiste maailmameistriks</b> (Kanada üle 6:2, 12. tiitel). Pronksi võitis Rootsi. <a class="src" href="https://sport.err.ee/1610197987/usa-hokinaised-tulid-12-korda-maailmameistriks">ERR</a></li>
+<li><span class="d">16.11</span>Venemaa olümpiakomitee kaebab IIHF-i otsuse (Venemaa ei osale juunioride MM-il Kanadas) CAS-i edasi. <a class="src" href="https://sport.err.ee/1610197978/venemaa-kaebab-iihf-i-otsuse-edasi-kanada-vaarib-karmi-karistust">ERR</a></li>
+<li><span class="d">16.–17.11</span>Laskesuusatamine: Jakob Kulbin jäi Idre kehva tulemuse tõttu MK-koondisest välja ega osale ka IBU karika etapil. Kehva sihib kodusel Otepää MM-il kohta 20 parema hulgas. MK-hooaeg algab Kontiolahtis. <a class="src" href="https://sport.err.ee/1610197573/mk-koondisest-valja-jaanud-kulbin-minu-jaoks-ka-ullatav-et-nii-kehvasti-laks">ERR</a> · <a class="src" href="https://sport.err.ee/1610198668/mk-sarja-koosseisust-valja-jaanud-kulbin-ei-osale-ka-ibu-karikaetapil">ERR</a> · <a class="src" href="https://sport.err.ee/1610197597/kehva-nii-on-ainult-room-hooaega-alustada">ERR</a></li>
+<li><span class="d">17.11</span>Johannes Høsflot Klæbo vigastas vasakut pöialt ja jättis Beitostøleni avastardi vahele. Ruka MK-etapp on „realistlik lootus”. <a class="src" href="https://sport.err.ee/1610198743/klabo-hooaja-avastart-lukkub-trauma-tottu-edasi">ERR</a></li>
+<li><span class="d">15.11</span>Lõunakeskus Trophy (Tartu): Maria Eliise Kaljuvere võitis (177,53 p), juunioridest oli Elina Goidina 3. <a class="src" href="https://sport.err.ee/1610197306/kaljuvere-voitis-tartus-goidina-jai-gp-medalistide-jarel-kolmandaks">ERR</a></li>
+<li><span class="d">17.11</span>Tallinn Trophy avapäev: Sofia Nekrassova oli naisjuunioride lühikavas parim (62,73 p). <a class="src" href="https://sport.err.ee/1610199307/nekrassova-naitas-tallinn-trophy-avapaeval-parimat-luhikava">ERR</a></li>
+<li><span class="d">15.11</span>Iluuisutamise GP Everettis: Ami Nakai võitis ja kindlustas koha GP-finaalis. Niina Petrõkina on GP-arvestuses 13 punktiga 8. <a class="src" href="https://sport.err.ee/1610197372/olumpiapronks-teenis-hooaja-teise-voidu-ja-kindlustas-koha-gp-finaalis">ERR</a></li>
+<li><span class="d">16.11</span>NHL: Connor McDavid jõudis 22 mänguga 40 väravasöödini nagu Wayne Gretzky. Leon Draisaitl viskas hooajal esimesena 20 väravat. <a class="src" href="https://sport.err.ee/1610197636/nhl-mcdavid-joudis-gretzkyga-samale-pulgale">ERR</a></li>
+<li><span class="d">17.11</span>Balti liiga: HC Panter võitis Zemgalet karistusvisetega 4:3 ja on 3. kohal. <a class="src" href="https://sport.err.ee/1610199178/hc-panter-alistas-zemgale-teist-mangu-jarjest-karistusvisetega">ERR</a></li>
+<li><span class="d">16.11</span>Robert Rooba viskas KooKoo eest hooaja 4. värava. KooKoo on Soome liigas viimane. <a class="src" href="https://sport.err.ee/1610197633/robert-rooba-viskas-soomes-hooaja-neljanda-varava">ERR</a></li>
+</ul>
+</section>
+
+<section id="auto">
+<h2>🏎️ Autosport ja motosport</h2>
+<ul class="f">
+<li class="s"><span class="d">17.11</span><b>Fernando Alonso sõidab Dakari rallil Aston Martiniga</b> (tiimikaaslased Loeb ja Moraes, kaardilugeja Marc Coma). <a class="src" href="https://sport.err.ee/1610198704/fernando-alonso-laheb-jaanuaris-dakari-rallile">ERR</a></li>
+<li><span class="d">17.11</span>WRC komisjon: alates 2027 on kõrgeim klass „FIA WRC1 maailmameistrivõistlused”, tiitli eest sõidavad ainult Rally1 autod. Muudatuse peab kinnitama maailma mootorispordi nõukogu. <a class="src" href="https://sport.err.ee/1610198818/autoralli-mm-sarja-kavatsetakse-luua-korgemale-klassile-eraldi-arvestus">ERR</a></li>
+<li><span class="d">18.11</span>Paul Aron tegi Madridis Jarama rajal vormel-E testil avarii (Fortescue Zero Racing). <a class="src" href="https://sport.err.ee/1610199439/paul-aron-tegi-vormel-e-testisoidul-avarii">ERR</a></li>
+<li><span class="d">17.11</span>Kardisõitjad Albert Tamm ja Markus Kajak jõudsid Las Vegase SuperNationalsil finaalidesse. <a class="src" href="https://sport.err.ee/1610198752/kardisoitjad-markus-kajak-ja-albert-tamm-joudsid-las-vegases-finaalidesse">ERR</a></li>
+</ul>
+</section>
+
+<section id="tennis">
+<h2>🎾 Tennis</h2>
+<ul class="f">
+<li class="s"><span class="d">15.11</span><b>Mirra Andrejeva võitis WTA finaalturniiri</b> (finaalis Svitolina üle 7:5, 6:3) settigi kaotamata ja tõusis maailma 2. kohale. Paarismängus võitsid Siniaková ja Townsend. <a class="src" href="https://sport.err.ee/1610197111/19-aastane-andrejeva-voitis-settigi-kaotamata-wta-finaalturniiri">ERR</a></li>
+<li><span class="d">16.–17.11</span>ATP finaalturniir Torinos: Zverev võitis Sheltonit (7. võit 7 mängust) ja Alcaraz Tiafoed 6:2, 6:2. Medvedev võitis Cobollit. <a class="src" href="https://sport.err.ee/1610198881/zverev-sai-taas-sheltonist-jagu">ERR</a> · <a class="src" href="https://sport.err.ee/1610197816/alcaraz-alustas-aastaloputurniiri-kindla-voiduga">ERR</a></li>
+<li><span class="d">16.11</span>Edetabel: Mark Lajal 164., Daniil Glinka langes 205. kohale. Elena Malõgina on 299. ja Carol Plakk tuli WTA tabelisse (1502.). <a class="src" href="https://sport.err.ee/1610197186/glinka-langes-edetabelis-200-parema-seast-valja">ERR</a></li>
+<li><span class="d">17.–18.11</span>Carol Plakk pääses Monastiris põhiturniirile. Oliver Ojakäär alustas NCAA meistrivõistlusi võiduga. <a class="src" href="https://sport.err.ee/1610198638/asja-wta-edetabelisse-joudnud-plakk-paases-monastiris-pohiturniirile">ERR</a> · <a class="src" href="https://sport.err.ee/1610199469/ojakaar-alustas-usa-uliopilasliiga-meistrivoistlusi-voidukalt">ERR</a></li>
+</ul>
+</section>
+
+<section id="muu">
+<h2>🥇 Muud alad (Eesti)</h2>
+<ul class="f">
+<li class="s"><span class="d">17.11</span><b>Viktoria Motritško (Ukraina) kaitses Tallinnas kabe naiste MM-tiitlit</b> Darja Tkatšenko vastu (otsustas 7. lisapartii). <a class="src" href="https://sport.err.ee/1610198836/tallinnas-selgus-kabe-naiste-maailmameister">ERR</a></li>
+<li class="s"><span class="d">14.–16.11</span><b>The League 13 Tondirabas: Eesti võitlusspordi publikurekord (üle 5000).</b> Grents võitis WBC tiitli, Kapaneni võit tühistati. Heategevusmatš Kõlvart–Renno lõppes viigiga. <a class="src" href="https://sport.err.ee/1610197885/the-league-pustitas-eesti-voitlusspordi-publikurekordi">ERR</a></li>
+<li><span class="d">16.11</span>Revo Maimre tuli 9-palli Eesti meistriks (Mark Mägi üle 11:6). <a class="src" href="https://sport.err.ee/1610197150/juunioride-maailmameister-revo-maimre-krooniti-9-palli-eesti-meistriks">ERR</a></li>
+<li><span class="d">16.11</span>Sulgpalli võistkondlik EM Tallinnas 6.–10.01: koondist veab Kristin Kuuba. Esimest korda mängitakse geimi 15 punktini. <a class="src" href="https://sport.err.ee/1610197714/eestit-veab-kodusel-sulgpalli-em-il-kristin-kuuba">ERR</a></li>
+<li><span class="d">14.11</span>Eesti orienteerumine tähistas Viljandis 100. aastapäeva. Ilmus raamat „Kordumatud rajad”. <a class="src" href="https://sport.err.ee/1610198542/eesti-orienteerumissport-tahistas-viljandis-100-sunnipaeva">ERR</a></li>
+<li><span class="d">18.11</span>Kristo Tohver: liikumisharrastuse kompetentsikeskus läheb EOK alla ja keskendub noortele, kokkuhoid on umbes 300 000 €. <a class="src" href="https://sport.err.ee/1610199142/tohver-liikumisharrastuse-kompetentsikeskus-keskendub-edaspidi-noortele">ERR</a></li>
+</ul>
+</section>
+
+<section id="maailm">
+<h2>🌐 Maailm (muud)</h2>
+<ul class="f">
+<li><span class="d">16.11</span>NFL Münchenis: Detroit Lions võitis New England Patriotsi 35:10, Amon-Ra St. Brown (ema sakslanna) tegi 2 touchdown'i. <a class="src" href="https://sport.err.ee/1610197741/sakslased-said-oma-mehe-touchdown-i-tahistada">ERR</a></li>
+<li><span class="d">17.11</span>Golf: Bryson DeChambeau liitus pärast LIV sarja kokkuvarisemist DP World Touriga. <a class="src" href="https://sport.err.ee/1610198629/dechambeau-liitus-vastuolulise-liv-sarja-lagunemise-jarel-euroopa-tuuriga">ERR</a></li>
+<li><span class="d">17.11</span>Austraalias leiti eutaneeritud võistlushobune So You Are prügimäelt, see tõstatas hobuste heaolu teema. <a class="src" href="https://sport.err.ee/1610198536/mitmeid-voite-toonud-voistlushobune-leiti-parast-eutaneerimist-prugimaelt">ERR</a></li>
+</ul>
+</section>
+
+</details><details class="big" id="lisa"><summary><span class="st">📰 Postimees ja Delfi: lood, mida ERR-is ei olnud</span><span class="sh">pealkirjad + lingid</span></summary>
+<section>
+<p class="legend">Ainult pealkiri ja link. Paljud lood on tellijatele, sisu kontrolli ise.</p>
+<ul class="f">
+<li><span class="d">16.–18.11</span>UEFA toetab FIFA presidendiks Philippe Diallot (Infantino vastu). Wenger loobus. Kandideerivad ka Kozo Tashima ja Ramon Vega, valimised on 18.03.2027 Rabatis. <a class="src" href="https://sport.postimees.ee/8584548">Postimees</a> · <a class="src" href="https://sport.delfi.ee/artikkel/120625597">Delfi</a> · <a class="src" href="https://sport.postimees.ee/8585748">Postimees</a></li>
+<li><span class="d">16.11</span>Jürgen Klopp: Infantino on hullem kui Blatter. <a class="src" href="https://sport.postimees.ee/8584505">Postimees</a></li>
+<li><span class="d">15.11</span>Suri vanim elus olnud jalgpalli maailmameister Dino Sani (Brasiilia, 1958), 94-aastasena. <a class="src" href="https://sport.delfi.ee/artikkel/120625328">Delfi</a></li>
+<li><span class="d">18.11</span>Eesti tõusis FIFA edetabelis 117. kohale (+5). Esikohal on Hispaania. <a class="src" href="https://sport.delfi.ee/artikkel/120625779">Delfi</a></li>
+<li><span class="d">18.11</span>Bulgaaria meedia nimetab kaotust Eestile häbiks: Bulgaaria kaotas sel sügisel esimest korda Luksemburgile, Islandile ja Eestile. <a class="src" href="https://sport.delfi.ee/artikkel/120625739">Delfi</a></li>
+<li><span class="d">16.11</span>Soome võitis San Marinot 7:2 (Svanbäck 3 väravat). Läti viigistas Armeeniaga 0:0. <a class="src" href="https://sport.delfi.ee/artikkel/120625019">Delfi</a></li>
+<li><span class="d">18.11</span>Koondislane Ioan Yakovlev kaebas Kreeka klubi Panioniose kohtusse (maksmata maksud). <a class="src" href="https://sport.delfi.ee/artikkel/120625679">Delfi</a></li>
+<li><span class="d">17.–18.11</span>Henry Sildaru: OM-i rennisõidu finaalis ei näinud kohtunikud minu lisapööret (selg ees 1440). <a class="src" href="https://sport.postimees.ee/8585209">Postimees</a> · <a class="src" href="https://sport.delfi.ee/artikkel/120625720">Delfi</a></li>
+<li><span class="d">18.11</span>Toyota: kui Latvala maksupettuse eest vangi mõistetakse, võtab Juha Kankkunen suurema rolli. Prokurör nõuab 3 aastat 8 kuud. <a class="src" href="https://sport.delfi.ee/artikkel/120625657">Delfi</a> · <a class="src" href="https://sport.postimees.ee/8585621">Postimees</a></li>
+<li><span class="d">18.11</span>Saaremaa vald andis WRC2 maailmameister Robert Virvesele 10 000 € toetust. <a class="src" href="https://sport.postimees.ee/8585454">Postimees</a></li>
+<li><span class="d">17.11</span>Neuville tahab 2027. aastal sõita umbes 10 rallit Hyundai Rally2 autoga. Lancia testis WRC Kit-paketti. <a class="src" href="https://sport.delfi.ee/artikkel/120625408">Delfi</a> · <a class="src" href="https://sport.delfi.ee/artikkel/120625459">Delfi</a></li>
+<li><span class="d">16.–17.11</span>Korvpalli MM-valik: Eesti mängib 27.11 Unibet Arenal Prantsusmaaga (Hifi ja Lessort jäävad eemale) ja 30.11 võõrsil Soomega. L-alagrupis on Eestil 3 võitu. <a class="src" href="https://sport.delfi.ee/artikkel/120625357">Delfi</a> · <a class="src" href="https://sport.delfi.ee/artikkel/120625104">Delfi</a> · <a class="src" href="https://sport.postimees.ee/8584703">Postimees</a></li>
+<li><span class="d">17.11</span>Norra keelas Venemaa ja Valgevene sportlastel riiki siseneda, ka neutraalsetel. <a class="src" href="https://sport.postimees.ee/8584773">Postimees</a> · <a class="src" href="https://sport.delfi.ee/artikkel/120625401">Delfi</a></li>
+<li><span class="d">17.11</span>Venemaa iluuisutajad ei võistle Finlandia Trophyl Helsingis. <a class="src" href="https://sport.postimees.ee/8585311">Postimees</a></li>
+<li><span class="d">16.–17.11</span>IIHF-i uus president Franz Reindl kommenteeris Venemaa juunioride MM-i otsust. IIHF-i koduleht langes häkkerite ohvriks. <a class="src" href="https://sport.postimees.ee/8584441">Postimees</a> · <a class="src" href="https://sport.delfi.ee/artikkel/120625581">Delfi</a></li>
+<li><span class="d">16.11</span>Kabeföderatsiooni president Janek Mäggi: venelased ei pääse enne relvarahu laua taha. <a class="src" href="https://sport.delfi.ee/artikkel/120625267">Delfi</a></li>
+<li><span class="d">16.11</span>Norra laskesuusatamise katsevõistlused Geilos: Vetle Sjåstad Christiansen võitis kaks korda. Võitnud Guro Ytterhus jäeti MK-koondisest välja. <a class="src" href="https://sport.delfi.ee/artikkel/120625086">Delfi</a> · <a class="src" href="https://sport.postimees.ee/8584435">Postimees</a></li>
+<li><span class="d">16.11</span>Aivar Rehemaa: Ruka MK-etapil (27.–29.11) oleme konkurentsis. <a class="src" href="https://sport.delfi.ee/artikkel/120625189">Delfi</a></li>
+<li><span class="d">18.11</span>Kiiruisutaja Marten Liiv on hädas lähendajalihase vigastusega, järgmine MK-etapp on Jaapanis. <a class="src" href="https://sport.delfi.ee/artikkel/120625579">Delfi</a></li>
+<li><span class="d">17.11</span>Teivashüppaja Henri Apri (19) läheb 2027. aasta sügisel Tennessee ülikooli. <a class="src" href="https://sport.delfi.ee/artikkel/120625558">Delfi</a></li>
+<li><span class="d">16.11</span>Kregor Hermet vahetas Dijonis elukohta pärast sissetungija juhtumit. <a class="src" href="https://sport.delfi.ee/artikkel/120625297">Delfi</a></li>
+</ul>
+</section>
+</details></main></body></html>
